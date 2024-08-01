@@ -1,10 +1,14 @@
-<?php 
- 
- include("helper.php");
- class Display{
-    public function Info(){
-        echo "this is the namespace demonsration code";
-    }
- }
+<?php
+namespace App;
 
-?>
+use Helper\Display as HelperDisplay;
+
+class Display {
+    public function info() {
+        echo "this is the namespace demonstration code from app.php";
+    }
+}
+
+// Instantiate the HelperDisplay class
+$helperDisplay = new HelperDisplay();
+$helperDisplay->info();
